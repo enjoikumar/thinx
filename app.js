@@ -19,3 +19,5 @@ $(document).ready(function(){
 // challenge would be to make the image change size as well as responsiveness.
 
 // positioning of images in the bottom. Are they in a cetain format, size, layout etc. 
+
+// px for spacing and em for text
