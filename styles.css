@@ -1,3 +1,13 @@
+@font-face{
+	font-family: 'thinx';
+	src: url('Graphik-Medium.ttf');
+}
+
+html{
+	font-family: 'thinx'
+}
+
 body{
 	background-color: papayawhip;
 }
+
