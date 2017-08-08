@@ -97,6 +97,18 @@ select{
 	padding: 5px 30px 5px 30px;	
 }
 
+select#sizescroll {
+  -webkit-appearance: button;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right black;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  width: 310px;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  background-position-x: 280px;
+}
+
 
 
 
