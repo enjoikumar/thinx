@@ -4,7 +4,7 @@
 }
 
 html{
-	font-family: 'thinx'
+	font-family: 'thinx';
 }
 
 body{
@@ -16,4 +16,16 @@ a{
 }
 a:visited{
 	color: black;
+}
+
+.nav{
+	text-align: right;
+	padding: 10px 10px 10px 10px;
+	font-size: 20px;
+}
+a#thinx{
+	margin-right: 20%;
+}
+.nav a{
+	padding: 10px 10px 10px 10px;
 }
