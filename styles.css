@@ -50,9 +50,52 @@ a#thinx{
 .main img{
 	width: 50%;
 	height: 50%;
+	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+}
+.out{
+	cursor: -webkit-zoom-out; cursor: -moz-zoom-out;
+}
+	
+.righttext{
+	overflow: hidden;	
+	float: right;	
+	margin-right: 5em;
+	position: sticky;
+	top: 13em;
+	margin-top: -200em;
 }
 
+.colorbox{
+	display: inline-block;
+	/*background-color: papayawhip;*/
+}
+.colorbox div{
+	font-size: 1em;
+	float: left;
+	padding: 5px 30px 5px 30px;
+	border: solid 1px black;
+	cursor: pointer;
+}
 
+.quan{
+	font-size: 1em;
+	display: inline-block;
+}
+.quan div{
+	float: left;
+	border:solid 1px black;
+}
+#min, #plus{	
+	padding: 5px 15px 5px 15px;
+	cursor: pointer;
+}
+#eq{
+	padding: 5px 79px 5px 79px;
+}
+
+select{
+	padding: 5px 30px 5px 30px;	
+}
 
 
 

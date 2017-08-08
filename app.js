@@ -1,5 +1,57 @@
 $(document).ready(function(){
-	console.log('hello');
+
+	$('img').click(function(){
+		$('.emt').css('display', 'none')
+		$('img').css('width', '100%')
+		$('img').css('height', '100%')
+		$('.main').css('margin-left', '-1em')
+		$('.main').css('margin-top', '0em')
+		$('.main img').addClass('out')
+	})
+
+
+
+	$black = $('#black');
+	$beige = $('#beige');
+
+
+	$black.click(function(){
+		$black.css('color', 'white');
+		$black.css('background-color', 'black');
+		$black.append(' &#10004;');
+
+		$beige.css('background-color', 'white');
+		// $beige.remove(' &#10004;');
+
+	})
+
+	$beige.click(function(){
+		$beige.css('background-color', '#F5DEB3');
+		$beige.append(' &#10004;');
+
+		$black.css('background-color', 'white')
+		$black.css('color', 'black')
+		// $black.remove(' &#10004;');
+	})
+
+	$black.trigger('click');
+
+	$min = $('#min');
+	$plus = $('#plus');
+	$numb = $('.numb');
+	
+	var count = 0;
+
+	$plus.click(function(){
+		count++;
+		$numb.html(' (' + count + ')');
+	});
+
+	$min.click(function(){
+		count--;
+		$numb.html(' (' + count + ')');
+	});
+
 })
 
 //Left text and right text fields are sticky
