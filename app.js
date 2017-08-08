@@ -1,12 +1,23 @@
 $(document).ready(function(){
 
+
+	var imgcount = 0;
+
 	$('img').click(function(){
-		$('.emt').css('display', 'none')
-		$('img').css('width', '100%')
-		$('img').css('height', '100%')
-		$('.main').css('margin-left', '-1em')
-		$('.main').css('margin-top', '0em')
-		$('.main img').addClass('out')
+		imgcount++
+		if (imgcount % 2){
+			$('.emt').css('display', 'none')
+			$('img').css('width', '100%');
+			$('img').css('height', '100%');
+			$(this).css('cursor', '-webkit-zoom-out');
+			$(this).css('cursor', '-moz-zoom-out');
+		} else {
+			$('.emt').css('display', 'block')
+			$('img').css('width', '50%');
+			$('img').css('height', '50%');
+			$(this).css('cursor', '-webkit-zoom-in');
+			$(this).css('cursor', '-moz-zoom-in');
+		}
 	})
 
 
