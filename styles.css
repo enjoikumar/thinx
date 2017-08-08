@@ -8,9 +8,9 @@ html{
 }
 
 body{
-	background-color: papayawhip;
+	background-color: #f8f8f9;
 }
-
+	
 a{
 	text-decoration: none;
 }
@@ -33,4 +33,35 @@ a#thinx{
 .lefttext{
 	line-height: 1.8em;
 	position: sticky;
+	top: 13em;
+	overflow: hidden;
+	margin-top: 13em;
+	margin-left: 5em;
 }
+.lefttext span{
+	font-size: 1em;
+}
+
+.main{
+	overflow: hidden;	
+	margin-top: -27em;
+	margin-left: 25em;
+}
+.main img{
+	width: 50%;
+	height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
