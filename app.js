@@ -24,28 +24,31 @@ $(document).ready(function(){
 
 	$black = $('#black');
 	$beige = $('#beige');
-
+	$text = $('<span> &#x2714;</span>');
 
 	$black.click(function(){
 		$black.css('color', 'white');
 		$black.css('background-color', 'black');
-		$black.append(' &#10004;');
+		$black.append($text)
 
 		$beige.css('background-color', 'white');
-		// $beige.remove(' &#10004;');
-
+		$black.remove($text)
 	})
 
 	$beige.click(function(){
 		$beige.css('background-color', '#F5DEB3');
-		$beige.append(' &#10004;');
+		$beige.append($text);
 
-		$black.css('background-color', 'white')
-		$black.css('color', 'black')
-		// $black.remove(' &#10004;');
+		$black.css('background-color', 'white');
+		$black.css('color', 'black');
+		$black.remove($text);
 	})
 
 	$black.trigger('click');
+
+
+
+
 
 	$min = $('#min');
 	$plus = $('#plus');
