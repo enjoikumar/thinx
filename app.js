@@ -3,18 +3,26 @@ $(document).ready(function(){
 
 	var imgcount = 0;
 
-	$('img').click(function(){
+	// margin-top: -27em;
+	// margin-left: 25em;
+
+	$('.main img').click(function(){
 		imgcount++
 		if (imgcount % 2){
 			$('.emt').css('display', 'none')
-			$('img').css('width', '100%');
-			$('img').css('height', '100%');
+			$('.main img').css('width', '100%');
+			$('.main img').css('height', '100%');
+			$('.main').css('margin-top', '0em');
+			$('.main').css('margin-left', '0em');
+
 			$(this).css('cursor', '-webkit-zoom-out');
 			$(this).css('cursor', '-moz-zoom-out');
 		} else {
 			$('.emt').css('display', 'block')
-			$('img').css('width', '50%');
-			$('img').css('height', '50%');
+			$('.main img').css('width', '50%');
+			$('.main img').css('height', '50%');
+			$('.main').css('margin-top', '-27em');
+			$('.main').css('margin-left', '25em');
 			$(this).css('cursor', '-webkit-zoom-in');
 			$(this).css('cursor', '-moz-zoom-in');
 		}

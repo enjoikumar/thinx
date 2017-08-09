@@ -95,6 +95,7 @@ a#thinx{
 
 select{
 	padding: 5px 30px 5px 30px;	
+	border: solid 1px black;
 }
 
 select#sizescroll {
@@ -102,18 +103,91 @@ select#sizescroll {
   background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right black;
   overflow: hidden;
   padding: 10px 10px 10px 10px;
-  width: 310px;
+  width: 29.9em;
   background-color: white;
   color: black;
   border-radius: 0px;
-  background-position-x: 280px;
+  background-position-x: 27em;
+}
+option{
+	font-size: 1.5em;
 }
 
+#quest{
+	font-size: .6em;
+	text-decoration: underline;
+	cursor: pointer;	
+}
 
+.cart{
+	text-align: center;
+  padding: 10px 10px 10px 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid 1px black;
+}
+.cart:hover{
+	background-color: white;
+	color: black;
+}
 
+#cycle{
+	font-size: 1.2em;
+	text-decoration: underline;
+	cursor: pointer;
+}
 
+.ending{
+	padding-top: 5em;
+	padding-bottom: 5em;
+	margin-top: 5em;
+	position: absolute;
+	background-color: white;
+	width: 100%;
+}
+.first, .fourth{
+	float: left;
+	margin-left: 10em;
+}
+.first img, .fourth img{
+	width: 50%;
+	height: 50%;
+}
+#ft, #st, #tht,
+#fot, #fit{
+	text-decoration: underline;
+	cursor: pointer;
+}
 
+.second img, .fifth img{
+	width: 50%;
+	height: 50%;
+}
+.second{
+	margin-top: -25em;
+	float: right;
+	display: inline-block;
+}
 
+.third img{
+	width: 50%;
+	height: 50%;
+}
+.third{
+	margin-top: 5em;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+.fourth{
+	margin-top: 10em;
+}
+.fifth{
+	margin-top: -27em;
+	float: right;
+	display: inline-block;	
+}
 
 
 
