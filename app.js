@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+	$min = $('#min');
+	$plus = $('#plus');
+	$numb = $('.numb');
+	
+	var $qcount = 0;
+
+	$plus.click(function(){
+		$qcount++;
+		$numb.html(' (' + $qcount + ')');
+	});
+
+	$min.click(function(){
+		$qcount--;
+		$numb.html(' (' + $qcount + ')');
+	});
+
 
 	var imgcount = 0;
 
@@ -58,22 +74,7 @@ $(document).ready(function(){
 
 
 
-	$min = $('#min');
-	$plus = $('#plus');
-	$numb = $('.numb');
 	
-	var count = 0;
-
-	$plus.click(function(){
-		count++;
-		$numb.html(' (' + count + ')');
-	});
-
-	$min.click(function(){
-		count--;
-		$numb.html(' (' + count + ')');
-	});
-
 })
 
 //Left text and right text fields are sticky
