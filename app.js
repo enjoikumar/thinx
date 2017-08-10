@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+	$('.main-carousel').flickity({
+	  // options
+	  cellAlign: 'left',
+	  contain: true,
+	  prevNextButtons: false 
+	});
+	
+	$('.main-carousel2').flickity({
+	  // options
+	  cellAlign: 'left',
+	  contain: true,
+	  prevNextButtons: false 
+	});
+
 	$min = $('#min');
 	$plus = $('#plus');
 	$numb = $('.numb');
@@ -69,10 +83,6 @@ $(document).ready(function(){
 	})
 
 	$black.trigger('click');
-
-
-
-
 
 	
 })
