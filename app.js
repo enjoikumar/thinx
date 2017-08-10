@@ -1,30 +1,27 @@
 $(document).ready(function(){
 
+	//enable the carousel
 	$('.main-carousel').flickity({
 	  // options
 	  cellAlign: 'left',
 	  contain: true,
 	  prevNextButtons: false 
 	});
-	
-	$('.main-carousel2').flickity({
-	  // options
-	  cellAlign: 'left',
-	  contain: true,
-	  prevNextButtons: false 
-	});
 
+	//calling the variables for the quantity clicker
 	$min = $('#min');
 	$plus = $('#plus');
 	$numb = $('.numb');
 	
 	var $qcount = 0;
 
+	//to add 
 	$plus.click(function(){
 		$qcount++;
 		$numb.html(' (' + $qcount + ')');
 	});
 
+	//to minus
 	$min.click(function(){
 		$qcount--;
 		$numb.html(' (' + $qcount + ')');
@@ -36,6 +33,7 @@ $(document).ready(function(){
 	// margin-top: -27em;
 	// margin-left: 25em;
 
+	//makes the image bigger when clicked
 	$('.main img').click(function(){
 		imgcount++
 		if (imgcount % 2){
@@ -59,7 +57,7 @@ $(document).ready(function(){
 	})
 
 
-
+	//black and beige clicker
 	$black = $('#black');
 	$beige = $('#beige');
 	$text = $('<span> &#x2714;</span>');
@@ -82,6 +80,7 @@ $(document).ready(function(){
 		$black.remove($text);
 	})
 
+	//black is always clicked
 	$black.trigger('click');
 
 	
