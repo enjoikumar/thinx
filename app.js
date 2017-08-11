@@ -80,7 +80,7 @@ $(document).ready(function(){
 		$black.remove($text);
 	})
 
-	//black is always clicked
+	//black is always on
 	$black.trigger('click');
 
 	

@@ -243,6 +243,10 @@ option{
 	.cart{
 		margin-top: -2em;
 	}
+	.footer{
+		position: relative;
+		margin-top: -30em;
+	}
 }
 
 
