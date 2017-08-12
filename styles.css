@@ -192,9 +192,10 @@ option{
 .main-carousel{
 	display: none;
 }
+
 	
 @media only screen and (max-width: 414px){
-	.ending, .main{
+	.main{
 		display: none;
 	}
 	.main-carousel{
@@ -243,9 +244,40 @@ option{
 	.cart{
 		margin-top: -2em;
 	}
-	.footer{
-		position: relative;
-		margin-top: -30em;
+
+	.ending{
+		margin-top: 55em;
+	}
+
+	.first img{
+		width: 100%;
+		height: 100%;
+		margin-left: -5em;
+	}
+
+	.second{
+		margin-top: 3em;
+		margin-left: 7em;
+	}
+	.second img, .fifth img{
+		height: 60%;
+		width: 60%;
+	}
+	.third, .fourth{
+		margin-top: 3em;
+		margin-left: 5em;
+	}
+	.third img, .fourth img{
+		width: 80%;
+		height: 80%;
+	}
+	.fourth img{
+		width: 80%;
+		height: 80%;
+	}
+	.fifth{
+		margin-top: 3em;
+		margin-left: 7em;	
 	}
 }
 
