@@ -1,4 +1,4 @@
-#Thinx
+# Thinx
 
 The challenge was to create a page similar to the one found on ssense. 
 
