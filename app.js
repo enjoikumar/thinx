@@ -15,13 +15,13 @@ $(document).ready(function(){
 	
 	var $qcount = 0;
 
-	//to add 
+	//to add to quantity
 	$plus.click(function(){
 		$qcount++;
 		$numb.html(' (' + $qcount + ')');
 	});
 
-	//to minus
+	//to minus from quantity
 	$min.click(function(){
 		$qcount--;
 		$numb.html(' (' + $qcount + ')');
@@ -30,8 +30,6 @@ $(document).ready(function(){
 
 	var imgcount = 0;
 
-	// margin-top: -27em;
-	// margin-left: 25em;
 
 	//makes the image bigger when clicked
 	$('.main img').click(function(){
@@ -57,7 +55,7 @@ $(document).ready(function(){
 	})
 
 
-	//black and beige clicker
+	//black and beige clicker when clicked, the check appears
 	$black = $('#black');
 	$beige = $('#beige');
 	$text = $('<span> &#x2714;</span>');
@@ -85,6 +83,10 @@ $(document).ready(function(){
 
 	
 })
+
+
+
+//------------Notes--------
 
 //Left text and right text fields are sticky
 
